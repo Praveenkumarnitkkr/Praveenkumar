@@ -1,0 +1,226 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-image: linear-gradient(rgb(86, 103, 255),rgb(255, 65, 246));
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+.line1{
+    background-color: rgb(0, 42, 255);
+    width: 128px;
+    height: 2px;
+    margin-top:12px;
+    margin-left: 50px;
+}
+#Get{
+    list-style: none;
+   display: flex;
+   flex-direction: column;
+   padding-left: 41%;
+    font-size: 2rem;
+    word-spacing: 10px;
+}
+.message{
+      display:flex;
+      justify-content: center;
+      font-weight: 500;
+      margin-top: 100px;
+      font-size: 1.7rem;
+}
+.message1{
+     display: block;
+     margin: auto;
+      margin-top: 50px;
+      font-size: 1.1rem;
+      width: 70%;
+}
+.NameInput{
+    height: 30px;
+    margin-top: 20px;
+    width: 180%;
+}
+#Text{
+    width: 180%;
+    height: 150px;
+    margin-top: 20px;
+}
+#Text::placeholder{
+    position: absolute;
+    top: 5px;
+}
+#AllInput{
+    display: flex;
+     flex-direction: column; 
+     padding-top: 60px;
+     color: white;
+     padding-right:15%;
+     
+}
+#Button{
+    width: 50%;
+    border-radius: 2px;
+    background-color: rgb(43, 0, 255);
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    padding:10px;
+    text-decoration-color: wheat;
+ 
+}
+#Button:hover{
+ cursor: pointer;
+ background-color: rgb(84, 72, 255);
+}
+#Button::placeholder{
+    color: white;
+}
+#Details{
+   display: flex;
+   list-style: none;
+   padding-left:60px;
+   padding-top: 40px;
+   flex-direction: column;
+   border-radius: 10px;
+}
+#Details1{
+    display: flex;
+    list-style: none;
+    padding-left:60px;
+    padding-top: 40px;
+    border-radius: 10px;
+    flex-direction: column;
+ }
+#Down{
+    display: flex;
+    justify-content: space-evenly;
+}
+#Location{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-image: url('location.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+#gmail{
+    height: 30px;
+    width: 30px;
+    background-image: url('gmail.png');    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+#phone{
+    height: 30px;
+    width: 30px;
+    background-image: url('call.png');    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+  @media (max-width:500px) {
+    .line1{
+        background-color: rgb(0, 8, 255);
+        width: 90px;
+        height: 2px;
+        margin-top:12px;
+        margin-left:33px;
+    }
+    #Get{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding-left:30%;
+        font-size:1.5rem;
+        word-spacing: 10px;
+    }
+    .message{
+        display:flex;
+        justify-content: center;
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 1.3rem;
+        margin-left: 5px;
+    }
+  .message1{
+       display: block;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 0.8rem;
+        width: 90%;
+    }
+  #Down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    }
+    .NameInput{
+        height: 30px;
+        margin-top: 20px;
+        width: 90%;
+        margin-left:5px;
+    }
+    #Text{
+        width: 90%;
+        height: 100px;
+        margin-top: 20px;
+        margin-left:5px;
+    }
+    #AllInput{
+        display: flex;
+         flex-direction: column; 
+         padding-top: 20px;
+         color: white;
+         padding-right:15%;
+    }
+    #Button{
+        width: 40%;
+        border-radius: 2px;
+        background-color: rgb(34, 0, 255);
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 5px;
+        padding:10px;
+        text-decoration-color: wheat;
+    }
+    #Details{
+        display: flex;
+        list-style: none;
+        padding-left:0px;
+        padding-top:0px;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 30px;
+     }
+    #Details1{
+        display: flex;
+        list-style: none;
+        padding-left:0px;
+        padding-top:0px;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: 10px;
+     }
+    #Location{
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+        background-image: url('location.png');
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+    }
+    #gmail{
+        height: 30px;
+        width: 30px;
+        background-image: url('gmail.png');    background-size: 30px 30px;
+        background-repeat: no-repeat;
+    }
+    #phone{
+        height: 30px;
+        width: 30px;
+        background-image: url('call.png');    background-size: 30px 30px;
+        background-repeat: no-repeat;
+    }
+
+  }

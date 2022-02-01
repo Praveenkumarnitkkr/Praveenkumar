@@ -1,0 +1,304 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image:linear-gradient(to left,pink,rgb(82, 172, 255),rgb(255, 155, 164));
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Photo{
+    width: 100%;
+    height:500px;
+    background-image: url('lovewhat.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%,500px;
+    object-fit: fill;
+}
+#Education{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    margin-top: 90px;
+}
+.line1{
+    width: 85px;
+    height: 2px;
+    background-color: rgb(21, 21, 21);
+    margin-top:1.05rem;
+    margin-left: 0px;
+    margin-right: 7px;
+}
+.line2{
+    width: 85px;
+    height: 2px;
+    background-color: rgb(24, 24, 24);
+    margin-top:1.05rem;
+    margin-left: 7px;
+    margin-right: 0px;
+}
+#Container{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#SideImage{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    background-image: url('NIT-Kurukshetra.jpg');
+    background-size: 100% 150px;
+    object-fit: fill;
+}
+.list{
+    list-style:none;
+    margin:1px;
+    font-weight: bold;
+
+}
+.list li{
+    padding: 3px;
+}
+#SideImage1{
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    background-image: url('school.jpeg');
+    background-size:100% 150px;
+    object-fit: fill;
+}
+.line3{
+    width: 85px;
+    height: 2px;
+    background-color: rgb(18, 17, 17);
+    margin-top:1.05rem;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#Skills{
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 70%;
+    border-radius: 10px;
+    background-image: url('webd.jpg');
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease;
+}
+#Align{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0px;
+   padding: 0px;
+   position: relative;
+   top: 50%;
+}
+.Button1{
+    width:40px;
+    border: none;
+    opacity: 0.5;
+    height: 30px;
+    background-image: linear-gradient(to right,rgb(154, 206, 255),rgb(229, 164, 255));
+}
+#dot1{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  } 
+#dot2{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(235, 232, 232);
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  } 
+#dot3{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  } 
+#dot4{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  } 
+  #My_Thought{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    list-style: none;
+    grid-gap: 15px;
+    background-image: linear-gradient(to left,rgb(150, 87, 143),rgb(138, 128, 255));
+ }
+ .Small_Card{
+     height: 220px;
+     background-image: url('read.jpg');
+     background-size:700px 220px;
+     background-repeat: no-repeat;
+     margin: 20px;
+     border-radius: 1px;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: bold;
+     position: relative;
+ }
+ .a{
+     text-decoration: none;
+     color: rgb(255, 255, 255);  
+ }
+  
+ #Made{
+   display: block;
+   margin: auto;
+   width: 23%;
+   color: red;
+   margin-top: 20px;
+   font-weight: bold;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   /* font-size: 1.5rem; */
+ }
+
+@media (max-width:1150px){
+    
+}
+
+  @media (max-width:800px) {
+    #Container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left:0px;
+        margin-right: 0px;
+    }
+    #Photo{
+        width: 100%;
+        height:350px;
+        background-image: url('Praveen.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%,350px;
+    }
+    #SideImage{
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: 150px;
+        border-radius: 5px;
+        background-image: url('NIT-Kurukshetra.jpg');
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+    }
+    #SideImage1{
+        display: block;
+        margin: auto;
+        width:80%;
+        height: 150px;
+        border-radius: 5px;
+        background-image: url('school.jpeg');
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+    
+    }
+    .line1{
+        width: 0px;
+        height: 2px;
+        background-color: white;
+        margin-top:1.05rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .line2{
+        width: 85px;
+        height: 2px;
+        background-color: rgb(255, 0, 0);
+        margin-top:0.8rem;
+        margin-left:30px;
+        margin-right: 7px;
+    }
+    .line3{
+        width: 85px;
+        height: 2px;
+        background-color: rgb(255, 0, 0);
+        margin-top:0.8rem;
+        margin-left:42px;
+        margin-right: 7px;
+    }
+    #Education{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.8rem;
+        flex-direction: column;
+        padding-left: 30%;
+    
+    }
+    #Skills{
+        display: block;
+        margin: auto;
+        height: 300px;
+        width: 90%;
+        border-radius: 10px;
+        background-image: url('webd.jpg');
+        background-size: 100% 300px;
+        background-repeat: no-repeat;
+        transition: background-image 1s ease;
+    }
+    .Button1{
+        display: none;
+        width:20px;
+        border: none;
+        opacity: 0.5;
+        height: 20px;
+        background-image: linear-gradient(to right,rgb(154, 206, 255),rgb(229, 164, 255));
+    }
+    #My_Thought{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-image: linear-gradient(to left,rgb(150, 87, 143),rgb(138, 128, 255));
+        margin: 0px;
+        padding: 0px;
+     }
+     .Small_Card{
+        height: 220px;
+    
+        background-size: 600px 220px;
+        background-repeat: no-repeat;
+        margin: 20px;
+        border-radius: 1px;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: relative;
+    }
+  }
+
+  
+

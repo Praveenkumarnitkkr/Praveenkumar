@@ -1,0 +1,659 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:   #ffffff;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient( to right ,rgb(255, 147, 206),rgb(218, 137, 255),pink);
+}
+#navlist{
+    display: flex;
+}
+
+/* Top Bar id is used for Navigation bar only and whole navigation bar is inside it  */
+#Navigation_Bar{
+    margin: 10px;
+    padding-top: 20px;
+    display: flex;
+    background-image: linear-gradient(to right,rgb(255, 147, 206),rgb(218, 137, 255),pink);
+    justify-content: space-between;
+}
+#Navigation_Bar li{
+    list-style: none;
+    padding-left: 20px;
+    font-weight: bold;
+    margin: 10px;
+    color: #ffffff;
+    font-size: 1.3em;
+ }
+ /* mylogo id used for the logo(eagle)  */
+#mylogo{
+    width: 100px;
+    height: 70px;
+    background-image: url('mylogo.png');
+    background-size:100px 70px;
+    background-repeat: no-repeat;
+}
+#mylogo:hover{
+cursor: pointer;
+}
+#items{
+    display:none;
+    flex-direction: column;
+}
+ #Menu{
+     display: none;
+     flex-direction: column;
+     justify-content: start;
+ }
+ .Upline{
+     width: 30px;
+     height: 3px;
+     background-color: black;
+ }
+ #phone{
+     border: none;
+     display: none;
+     justify-content: space-between;
+ }
+
+ #phlogo{
+     padding-top:0px ;
+     margin-top: -10px;
+     width: 40px;
+     height: 20px;
+     list-style: none;
+     background-image: url('phonelogo.png');
+     background-size:40px 20px;
+ }
+#Navigation_Bar li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#Navigation_Bar li a:hover{
+    color: rgb(255, 183, 251);
+    animation-name: topbar;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+@keyframes topbar {
+    100%{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+/* Name_Section is used for the Name part and the image  */
+#Name_And_ImageSection{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    list-style: none;
+}
+#Align_Names{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0vh;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+   
+}
+#Iam{
+    font-size: 1.3em !important;
+    padding-left: 120px;
+}
+#Icons{
+    display: flex; 
+    list-style: none;
+    justify-content: end;
+    padding-right: 200px;
+    padding-top: 20vh; 
+    list-style: none;
+}
+
+
+#praveen{
+    padding-top: 25px;
+    font-size:2.5rem;
+ 
+}
+/* Image is used for the Image used  */
+#Image{
+    width:90vh;
+    height: 65vh;
+     background-image: url('new.png');
+     background-repeat: no-repeat;
+     background-size:90vh 65vh;
+ }
+ #Image:hover{
+    animation-name: image;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+ }
+ @keyframes image {
+     25%{
+         transform: skew(10deg);
+     }
+     50%{
+         transform: scale(1.1);
+     }
+     75%{
+         transform: scale(1.2);
+     }
+     100%{
+         transform: scale(1);
+     }
+     
+ }
+
+ #SideImage{
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    background-image: url('NIT-Kurukshetra.jpg');
+    background-size: 300px 150px;
+    object-fit: fill;
+    display: none;
+}
+#SideImage1{
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    background-image: url('school.jpeg');
+    background-size: 300px 150px;
+    object-fit: fill;
+    display: none;
+}
+#Container{
+ 
+    background-color:#c764c0;
+    box-shadow: -1px 0px 2px 2px rgb(219 52 232);
+    margin-top: 50px;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: none;
+}
+.list{
+    list-style:none;
+    margin:1px;
+    font-weight: bold;
+    display: none;
+
+}
+.list li{
+    padding: 3px;
+}
+.line1{
+    width: 85px;
+    height: 2px;
+    background-color: rgb(21, 21, 21);
+    margin-top:1.05rem;
+    margin-left: 7px;
+    margin-right: 7px;
+    display: none;
+}
+.line2{
+    width: 85px;
+    height: 2px;
+    background-color: rgb(24, 24, 24);
+    margin-top:1.05rem;
+    margin-left: 7px;
+    margin-right: 7px;
+    display: none;
+}
+#Education{
+    display: none;
+    list-style: none;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+}
+#Skills{
+    display: none;
+    margin: auto;
+    height: 500px;
+    width: 70%;
+    border-radius: 10px;
+    background-image: url('webd.jpg');
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease;
+}
+#dot1{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+} 
+#dot2{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+} 
+#dot3{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+} 
+#dot4{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+} 
+ #Align{
+     display: none;
+     justify-content: space-between;
+     list-style: none;
+     margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 50%;
+ }
+#Button1{
+    display: none;
+    width:40px;
+    border: none;
+    opacity: 0.5;
+    height: 30px;
+    background-image: linear-gradient(to right,rgb(154, 206, 255),rgb(229, 164, 255));
+}
+
+#chat{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    list-style: none;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ @media screen and (max-width:1130px) {
+    #Image{
+        width:80vh;
+        height: 60vh;
+         background-image: url('new.png');
+         background-repeat: no-repeat;
+         background-size:80vh 60vh;
+     }
+     #Align_Names{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+        list-style: none;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    #Icons{
+        display: flex; 
+        list-style: none;
+        justify-content: end;padding-right: 200px;
+        padding-top: 100px; 
+        list-style: none;
+    }
+     
+ }
+ @media screen and (max-width: 950px) {
+    #Image{
+        width:60vh;
+        height: 55vh;
+         background-image: url('new.png');
+         background-repeat: no-repeat;
+         background-size:60vh 55vh;
+     }
+  }
+  
+ @media screen and (max-width: 602px) {
+    #Image{
+        width:50vh;
+        height: 45vh;
+         background-image: url('new.png');
+         background-repeat: no-repeat;
+         background-size:50vh 45vh;
+     }
+     
+  }
+  
+ @media screen and (max-width: 480px) {
+     body{
+         margin: 0px;
+         padding: 0px;
+         background-image: linear-gradient( to right ,rgb(150, 87, 143),rgb(138, 128, 255));
+     }
+    #Navigation_Bar{
+        padding: 0px;
+        display: none;
+        background-image: linear-gradient(to right,rgb(150, 87, 143),rgb(138, 128, 255));
+        justify-content: start;
+        align-items: flex-start;
+    }
+    #Navigation_Bar li{
+        list-style: none;
+        padding-left: 0px;
+        font-weight: bold;
+        margin: 5px;
+        color: #ffffff;
+        font-size: 1.2rem;
+     }
+    #Navigation_Bar li a{
+        padding: 0px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    #Navigation_Bar li a:hover{
+        color: rgb(255, 183, 251);
+        animation-name: topbar;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+    }
+    @keyframes topbar {
+        100%{
+            font-size: 1.3rem;
+        }
+    }
+    
+    
+    /* mylogo id used for the logo(eagle)  */
+    #mylogo{
+        display: none;
+    }
+    
+    /* Name_Section is used for the Name part and the image  */
+    #Name_And_ImageSection{
+        display: block;
+        margin: auto;
+        width: auto;
+        justify-content: space-between;
+        padding: 0px;
+        list-style: none;
+    }
+    #Align_Names{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:8vh;
+        list-style: none;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    #praveen{
+        padding-top: 15px;
+        font-size:1.5rem;
+        padding-left:0px
+    }
+    #Iam{
+        font-size: 1.3rem !important;
+        padding-left: 0px;
+        color: rgb(0, 0, 0) !important;
+    }
+    #Icons{
+        display: flex; 
+        list-style: none;
+        padding-top: 8vh; 
+        justify-content: flex-start;
+        padding-right: 0px;
+        padding-left: 0px;
+
+    }
+  
+    #Image{
+        width:0px;
+        height:0px;
+         background-image: url('new.png');
+         background-repeat: no-repeat;
+         background-size:0px 0px;
+     }
+    #SideImage{
+        width: 74%;
+        height: 120px;
+        border-radius: 5px;
+        background-image: url('NIT-Kurukshetra.jpg');
+        background-size: 100% 120px;
+        display: block;
+        margin: auto;
+    }
+    #SideImage1{  
+        width: 74%;
+        height: 120px;
+        border-radius: 5px;
+        background-image: url('school.jpeg');
+        background-size: 100% 120px;
+        object-fit: fill;
+        display: block;
+        margin: auto;
+    }
+    #Container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding-top: 10px;
+        justify-content: center;
+        margin-left:10px;
+        margin-right:10px;
+        border-radius: 5px;
+        background-color: rgb(196, 154, 190);
+    }
+    .list{
+        list-style:none;
+        margin:1px;
+        font-weight: bold;
+        display: block;
+    
+    }
+    .list li{
+        padding: 3px;
+    }
+    .line1{
+        width: 45px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin-top:1rem;
+        margin-left: 7px;
+        margin-right: 7px;
+        display:inline;
+    }
+    .line2{
+        width: 45px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin-top:1rem;
+        margin-left: 7px;
+        margin-right: 7px;
+        display: inline;
+        
+    }
+    #Education{
+        display: flex;
+        padding-right: 10%;
+        padding-top: 40px;
+        list-style: none;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.4rem;
+    }
+      
+    #Skills{
+        display: block;
+        margin: auto;
+        height: 300px;
+        width: 95%;
+        border-radius: 10px;
+        background-image: url('webd.jpg');
+        background-size: 100% 300px;
+        background-repeat: no-repeat;
+        transition: background-image 1s ease;
+    }
+    #dot1{
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin:0px;
+      border: 1px solid white;
+      background-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      transition: 01s ease;
+    } 
+    #dot2{
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin:0px;
+      border: 1px solid white;
+      background-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      transition: 1s ease;
+    } 
+    #dot3{
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin:0px;
+      border: 1px solid white;
+      background-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      transition: 1s ease;
+    } 
+    #dot4{
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin:0px;
+      border: 1px solid white;
+      background-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      transition: 1s ease;
+    } 
+     #Align{
+         display: flex;
+         justify-content: space-between;
+         list-style: none;
+         margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: 50%;
+     }
+    #Button1{
+        display: block;
+        width:20px;
+        border: none;
+        opacity: 0.5;
+        height: 25px;
+        background-image: linear-gradient(to right,rgb(150, 87, 143),rgb(138, 128, 255));
+    }
+
+
+    #Menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 0px;
+        margin: 5px;
+        list-style: none;
+      
+    
+    }
+    .Upline{
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        margin-top: 3px;
+    }
+    #phone{
+        display: flex;
+        justify-content: space-between;
+        background-image:linear-gradient(to right,rgb(150, 87, 143),rgb(138, 128, 255));
+        height: 35px;
+        top: 0;
+        position: sticky;
+        
+      
+    }
+    #items{
+        display:none;
+        flex-direction: column;
+        height: 150px;
+        width:35%;
+        position: absolute;
+        top: 0px;
+        margin-top: 0px;
+        padding-top: 20px;
+        padding-left: 0px;
+        color: black;
+        font-size: 1rem;
+        background-color: transparent;
+        list-style:none;
+        justify-content: space-evenly;
+    }
+    
+    #items li a{
+     text-decoration: none;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: black !important;
+    }
+    #items li{
+     text-decoration: none;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     border-bottom: 1px solid grey;
+    }
+    #portfolio{
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 3px;
+        word-spacing: -7px;
+        font-weight: bold;
+        
+    }
+    #port{
+        color: rgb(38, 1, 0) !important;
+    }
+    
+#chat{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    list-style: none;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#chat li{
+       padding: 20px;
+}
+
+
+  }
+  
